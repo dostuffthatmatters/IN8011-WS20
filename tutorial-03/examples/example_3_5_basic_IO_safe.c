@@ -1,16 +1,17 @@
-/************************************************************************************
+/******************************************************************************
 * Author: Moritz Makowski
-* Lecture: MSE Informatik I - WS19/20
+* Lecture: TUM - IN8011 - WS20
 * Session: Tutorial 03
-************************************************************************************/
-
+******************************************************************************/
 
 #include <stdio.h>
 
 // You don't have to understand this function yet!
-void print_char_array(char* char_array, int length) {
+void print_char_array(char *char_array, int length)
+{
     printf("\n");
-    for (int i=0; i<length; i++) {
+    for (int i = 0; i < length; i++)
+    {
         printf("\nIndex %d: %c", i, char_array[i]);
     }
     printf("\n\n");
@@ -19,14 +20,17 @@ void print_char_array(char* char_array, int length) {
 // You don't have to understand this function!
 // For windows people 'fflush(stdin);' instead of
 // this function will do the same thing.
-void my_flush(void) {
+void my_flush(void)
+{
     char c;
-    do {
+    do
+    {
         c = getchar();
     } while (c != '\n' && c != EOF);
 }
 
-int main() {
+int main()
+{
     char input_a[16] = {'\0'};
     char input_b[8] = {'\0'};
 

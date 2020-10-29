@@ -1,22 +1,22 @@
-/************************************************************************************
+/******************************************************************************
 * Author: Moritz Makowski
-* Lecture: MSE Informatik I - WS19/20
+* Lecture: TUM - IN8011 - WS20
 * Session: Tutorial 02
-************************************************************************************/
-
+******************************************************************************/
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     unsigned char a = 253;
 
     printf("a=%d\n\n", a);
 
-    unsigned char a1 = a+1;
-    unsigned char a2 = a+2;
-    unsigned char a3 = a+3;
-    unsigned char a4 = a+4;
-    unsigned char a5 = a+5;
+    unsigned char a1 = a + 1;
+    unsigned char a2 = a + 2;
+    unsigned char a3 = a + 3;
+    unsigned char a4 = a + 4;
+    unsigned char a5 = a + 5;
 
     printf("a+1=%d\n", a1);
     printf("a+2=%d\n", a2);
@@ -25,7 +25,8 @@ int main() {
     printf("a+5=%d\n\n", a5);
 
     // In a more elegant way
-    for (char i=1; i < 6; i++) {
+    for (char i = 1; i < 6; i++)
+    {
         unsigned char b = a + i;
         printf("a+%d=%d\n", i, b);
     }

@@ -7,13 +7,9 @@
 
 #include <stdio.h>
 
-int main() {
-    int a = 11;
-    int b = 3;
-    int c = a % b;  // = 2
-
-    // Use '%%' to print a percent sign
-    printf("%d %% %d = %d\n", a, b, c);
-
-    return 0;
+int main(){
+    int count = 1;
+    while(count <= 100) {
+        printf("My number is %d\n", count++);
+    }
 }

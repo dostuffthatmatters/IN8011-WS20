@@ -6,14 +6,13 @@
 
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main() {
-    int a = 11;
-    int b = 3;
-    int c = a % b;  // = 2
-
-    // Use '%%' to print a percent sign
-    printf("%d %% %d = %d\n", a, b, c);
-
-    return 0;
+    srand(time(NULL));
+    for (int i=0; i<20; i++) {
+        int my_random = rand() % 42;
+        printf("%d\n", my_random);
+    }
 }

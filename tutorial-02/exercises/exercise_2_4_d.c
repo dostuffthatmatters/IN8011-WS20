@@ -6,22 +6,18 @@
 
 
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 int main() {
-    int a = 11;
-    int b = 3;
-    float c = a/b;
-    printf("%f\n", c);
+    srand(time(NULL));
+    int count = 1;
 
-    int d = 11;
-    float e = 3;  // Same as 'float e = 3.0;'
-    float f = d/e;
-    printf("%f\n", f);
-
-    float g = 11;  // Same as 'float g = 11.0;'
-    int h = 3;
-    float i = g/h;
-    printf("%f\n", i);
+    while (count <= 100) {
+        int my_random = rand() % 42;
+        printf("My number is %d\n", my_random);
+        count++;
+    }
 
     return 0;
 }

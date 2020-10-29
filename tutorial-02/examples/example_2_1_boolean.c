@@ -14,14 +14,10 @@ int main() {
     bool c = true;
 
     // %d will be replaced by (a && b)
-    printf("\n%d", a && b);
-    printf("\n%d", a && c);
-
-    printf("\n");
+    printf("%d\n", a && b);
+    printf("%d\n\n", a && c);
 
     // If you want to get extra fancy
-    printf("\n%s", (a && b) ? "true" : "false");
-    printf("\n%s", (a && c) ? "true" : "false");
-
-    printf("\n");
+    printf("%s\n", (a && b) ? "true" : "false");
+    printf("%s\n", (a && c) ? "true" : "false");
 }

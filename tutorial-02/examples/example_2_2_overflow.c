@@ -10,7 +10,7 @@
 int main() {
     unsigned char a = 253;
 
-    printf("\na=%d\n\n", a);
+    printf("a=%d\n\n", a);
 
     unsigned char a1 = a+1;
     unsigned char a2 = a+2;

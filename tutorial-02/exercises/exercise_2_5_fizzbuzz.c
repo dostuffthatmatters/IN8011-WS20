@@ -8,12 +8,15 @@
 #include <stdio.h>
 
 int main() {
-    int a = 11;
-    int b = 3;
-    int c = a % b;  // = 2
-
-    // Use '%%' to print a percent sign
-    printf("%d %% %d = %d\n", a, b, c);
-
-    return 0;
+    for (int i=1; i<=100; i++) {
+        if (i%3 == 0) {
+            printf("Fizz");
+        }
+        if (i%5 == 0) {
+            printf("Buzz");
+        } else if (i%3 != 0) {
+            printf("%d", i);
+        }
+        printf("\n");
+    }
 }

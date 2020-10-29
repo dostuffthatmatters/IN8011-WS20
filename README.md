@@ -1,5 +1,7 @@
 
-# IN8011 - Engineering Informatics 1 (MSE) - WS20 (Group _tbd_)
+# IN8011 - Engineering Informatics 1 (MSE)
+
+*WS20 - Group _tbd_*
 
 ### Tutorial Sessions:
 

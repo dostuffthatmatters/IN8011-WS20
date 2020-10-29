@@ -1,7 +1,9 @@
 
-# IN8011 - Engineering Informatics 1 (MSE)
+# IN8011 - WS20
 
-*WS20 - Group _tbd_*
+**Engineering Informatics 1 (MSE)** - WS20 - Tutorial group _tbd_ (Moritz Makowski)
+
+<br/>
 
 ### Tutorial Sessions:
 

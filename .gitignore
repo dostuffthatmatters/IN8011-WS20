@@ -1,4 +1,6 @@
-preparation/
+slides/tutorial**
+slides/memes**
+slides/additional-exercises**
 **/.idea/
 **/cmake-build-debug/
 

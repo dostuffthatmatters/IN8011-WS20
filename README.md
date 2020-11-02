@@ -3,6 +3,8 @@
 
 **Engineering Informatics 1 (MSE)** - WS20 - Tutorial group _tbd_ (Moritz Makowski)
 
+*Be patient with the download links (~5s).*
+
 <br/>
 
 ### Tutorial Sessions:

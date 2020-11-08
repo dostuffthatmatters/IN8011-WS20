@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 paginate: true
 ---
 
@@ -10,9 +10,9 @@ img[alt~="center"] {
 }
 </style>
 
-# Tutorial 01 - _tbd_.11.2020
+# Tutorial 01 - 09.11.2020
 
-Group _tbd_ - Moritz Makowski
+Group 02 - Moritz Makowski
 
 <br/>
 

@@ -10,9 +10,9 @@ img[alt~="center"] {
 }
 </style>
 
-# Tutorial 03 - _tbd_.11.2019
+# Tutorial 03 - 23.11.2019
 
-Group _tbd_ - Moritz Makowski
+Group 02 - Moritz Makowski
 
 <br/>
 

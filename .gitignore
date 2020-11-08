@@ -1,20 +1,20 @@
-slides/tutorial**
-slides/memes**
+
 slides/additional-exercises**
 **/.idea/
 **/cmake-build-debug/
 
 tutorial-02/exercises
 tutorial-03/exercises
-tutorial-04/exercises
-tutorial-05/exercises
-tutorial-06/exercises
-tutorial-07/exercises
-tutorial-08/exercises
-tutorial-09/exercises
-tutorial-10/exercises
-tutorial-11/exercises
-tutorial-12/exercises
+tutorial-04*
+tutorial-05*
+tutorial-06*
+tutorial-07*
+tutorial-08*
+tutorial-09*
+tutorial-10*
+tutorial-11*
+tutorial-12*
+tutorial-13*
 
 
 

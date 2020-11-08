@@ -1,5 +1,6 @@
 ---
 marp: true
+paginate: true
 ---
 
 <style>

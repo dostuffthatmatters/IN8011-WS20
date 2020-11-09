@@ -1,5 +1,5 @@
 ---
-marp: false
+marp: true
 paginate: true
 ---
 
@@ -459,13 +459,7 @@ We will correct them as fast as possible and give you a short feedback on the su
 
 ---
 
-## Homework Assignment 01 _(Only preliminary information)_
-
-Instructions are available from: **Friday, _tbd_.11.2020**
-
-Due until: **Sunday, _tbd_.11.2020**
-
-<br/>
+## Homework Assignments
 
 Only submit your **C script(s)**, not your executables.
 

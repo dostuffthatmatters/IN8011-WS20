@@ -531,14 +531,12 @@ _Hint: Evaluate the passed numbers with `atoi()`._
 
 ## See You Next Week!
 
-All **code examples** and **exercise solutions** on **GitHub** (solutions right after my tutorial):
+All **code examples** and **exercise solutions** on **GitLab** (solutions right after my tutorial):
 https://github.com/dostuffthatmatters/IN8011-WS20
-
-<br/>
 
 <!-- Generated with https://www.qrcode-monkey.com/de -->
 
-![w:250 center](../github-qr-code.png)
+![w:300 center](../gitlab-qr-code.png)
 
 ---
 

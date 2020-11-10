@@ -10,7 +10,7 @@
 
 Tutorial 01 - 09.11.2020 - **Introduction, Installation** <br/>
 Download:
-[Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-01) | 
+[Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-01) |
 [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T01-moritz-makowski.pdf?inline=false)
 
 <br/>
@@ -24,5 +24,5 @@ Download:
 
 Tutorial 03 - 23.11.2020 - **File Structure, Input/Output and More Control Flow** <br/>
 Download:
-[Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-03) | 
+[Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-03) |
 [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T03-moritz-makowski.pdf?inline=false)

@@ -94,7 +94,7 @@ Compilation progress:
 ```bash
 $ gcc hello_world.c -o program
 $ ./program
-Our number is: ?.
+Hello, World!
 ```
 
 ---
@@ -496,7 +496,7 @@ add_executable(example_project main.c)
 ## Additional Resources
 
 All **code examples** and **exercise solutions** on **GitLab** (solutions right after my tutorial):
-https://github.com/dostuffthatmatters/IN8011-WS20
+https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20
 
 <!-- Generated with https://www.qrcode-monkey.com/de -->
 

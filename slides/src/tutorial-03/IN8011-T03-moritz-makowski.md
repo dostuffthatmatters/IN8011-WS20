@@ -532,7 +532,7 @@ _Hint: Evaluate the passed numbers with `atoi()`._
 ## See You Next Week!
 
 All **code examples** and **exercise solutions** on **GitLab** (solutions right after my tutorial):
-https://github.com/dostuffthatmatters/IN8011-WS20
+https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20
 
 <!-- Generated with https://www.qrcode-monkey.com/de -->
 

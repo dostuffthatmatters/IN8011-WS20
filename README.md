@@ -2,9 +2,9 @@
 
 **Engineering Informatics 1 (MSE)** - WS20 - Tutorial Groups 02 & 11 (Moritz Makowski)
 
-**Zoom Session:** https://tum-conf.zoom.us/j/91720886687 (pw: 259495)
-Group 02: Every Monday 13:00-15:15
-Group 11: Every Thursday 15:00-18:15
+**Zoom Session:** https://tum-conf.zoom.us/j/91720886687 (pw: 259495)<br/>
+**Group 02:** Monday 13:00 - 15:15<br/>
+**Group 11:** Thursday 15:45 - 18:00
 
 <br/>
 

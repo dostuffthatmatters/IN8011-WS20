@@ -12,13 +12,17 @@ int main()
 {
     srand(time(NULL));
     int count = 1;
-
     while (count <= 100)
     {
         int my_random = rand() % 42;
-        printf("My number is %d\n", my_random);
+        if (my_random >= 21)
+        {
+            printf("Higher: %d\n", my_random);
+        }
+        else
+        {
+            printf("Lower: %d\n", my_random);
+        }
         count = count + 1;
     }
-
-    return 0;
 }

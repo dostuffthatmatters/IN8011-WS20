@@ -12,13 +12,25 @@ int main()
 {
     srand(time(NULL));
     int count = 1;
-
+    int higher = 0;
+    int lower = 0;
     while (count <= 100)
     {
         int my_random = rand() % 42;
-        printf("My number is %d\n", my_random);
+        if (my_random >= 21)
+        {
+            higher++;
+            printf("Higher: %d\n", my_random);
+        }
+        else
+        {
+            lower++;
+            printf("Lower: %d\n", my_random);
+        }
         count = count + 1;
     }
 
-    return 0;
+    printf("\n------------------\n");
+    printf("%3d numbers were lower than 21.\n", lower);
+    printf("%3d numbers were greater equal 21.\n", higher);
 }

@@ -25,7 +25,7 @@ int main()
     printf("a+5=%d\n\n", a5);
 
     // In a more elegant way
-    for (char i = 1; i < 6; i++)
+    for (char i = 1; i <= 20; i = i + 1)
     {
         unsigned char b = a + i;
         printf("a+%d=%d\n", i, b);

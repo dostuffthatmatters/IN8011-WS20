@@ -5,20 +5,15 @@
 ************************************************************************************/
 
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main()
 {
     srand(time(NULL));
-    int count = 1;
-
-    while (count <= 100)
+    for (int i = 0; i < 20; i = i + 1)
     {
-        int my_random = rand() % 42;
-        printf("My number is %d\n", my_random);
-        count = count + 1;
+        int my_random = rand() % 3;
+        printf("%d\n", my_random);
     }
-
-    return 0;
 }

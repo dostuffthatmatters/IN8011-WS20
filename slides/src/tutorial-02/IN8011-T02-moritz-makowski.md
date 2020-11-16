@@ -472,7 +472,7 @@ int main() {
 }
 ```
 
-**(d)** How can you make it display a number between `0` and `41` (included)? _(Code on GitHub)_
+**(d)** How can you make it display a number between `0` and `41` (included)? _(Solutions on GitLab)_
 
 You can ignore the line `srand(time(NULL));`.
 
@@ -560,7 +560,7 @@ _We will have a look at `for`-loops and `switch`-statements next week!_
 
 ## **Exercise 2.4: Control Flow — `while` and `if`/`else` - #1**
 
-**(a)** What does the following code do? _(Code on GitHub)_
+**(a)** What does the following code do? _(Solutions on GitLab)_
 
 ```c
 #include <stdio.h>
@@ -581,11 +581,11 @@ int main(){
 
 ## **Exercise 2.4: Control Flow — `while` and `if`/`else` - #2**
 
-**(d)** Write a program that uses a **while loop** to generate and print **100 random numbers between `0` and `41`** (included) using the `rand()` function. _(Code on GitHub)_
+**(d)** Write a program that uses a **while loop** to generate and print **100 random numbers between `0` and `41`** (included) using the `rand()` function. _(Solutions on GitLab)_
 
-**(e)** Enhance your program to print **“Higher”** if the random number is greater than or equal to `21` and **“Lower”** if it is less than `21`. _(Code on GitHub)_
+**(e)** Enhance your program to print **“Higher”** if the random number is greater than or equal to `21` and **“Lower”** if it is less than `21`. _(Solutions on GitLab)_
 
-**(f)** Enhance your program to **count** the number of random numbers that are greater than or equal to `21` and **print that number**. _(Code on GitHub)_
+**(f)** Enhance your program to **count** the number of random numbers that are greater than or equal to `21` and **print that number**. _(Solutions on GitLab)_
 
 **(g)** How large would you expect this number to be? Explain your reasoning.
 
@@ -601,7 +601,7 @@ The task is to print all numbers from 1 to 100 (included) but:
 
 <br/>
 
-_(Code on GitHub)_
+_(Solutions on GitLab)_
 
 ---
 

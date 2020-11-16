@@ -10,9 +10,9 @@ img[alt~="center"] {
 }
 </style>
 
-# Tutorial 02 - 16.11.2020
+# Tutorial 02 - 16.11./19.11.2020
 
-Group 02 - Moritz Makowski
+Group 02/11 - Moritz Makowski
 
 <br/>
 
@@ -40,7 +40,7 @@ Group 02 - Moritz Makowski
 
 Source: [Data Types @ Wikipedia](https://en.wikipedia.org/wiki/Data_type)
 
-So every data point can be stored and interpreted in different ways.
+So every data element can be stored and interpreted in different ways.
 
 ---
 

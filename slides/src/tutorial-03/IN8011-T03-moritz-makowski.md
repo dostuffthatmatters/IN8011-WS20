@@ -521,7 +521,7 @@ What will be printed out?
 
 **(c)** Write a program that accepts a number and prints out, whether that **number is a prime or not**. After the result is printed out. Ask the user for another number (infinite loop).
 
-**(d) _(Bonus)_** Handle the cases for **(a)**, **(b)** and **(c)** where the user enters a string where `atoi()` returns `0` by displaying an error message and asking the user to enter a valid number.
+**(d) _(Bonus)_** Handle the cases for **(a)** and **(b)** where the user enters a string where `atoi()` returns `0` by displaying an error message and asking the user to enter a valid number.
 
 <br/>
 

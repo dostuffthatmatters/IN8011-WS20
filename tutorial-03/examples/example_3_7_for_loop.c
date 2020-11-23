@@ -12,9 +12,9 @@ int main()
     int prime_numbers_found = 0;
     int upper_limit = 100;
 
-    for (int n = 2; n < upper_limit; n++)
+    for (int n = 2; n < upper_limit; n = n + 1)
     {
-        char is_prime = 1; // true (until an even divisor is found)
+        int is_prime = 1; // true (until an even divisor is found)
 
         for (int divisor = 2; divisor < n; divisor++)
         {

@@ -421,6 +421,78 @@ CLion also has an answer to that error message: https://www.jetbrains.com/help/c
 
 ---
 
+## EDIT: The `CMakeLists.txt` file - #1
+
+The `CMakeLists.txt` file is basically just a description on what files can be compiled and run. In CLion the "Play Button" is powered by that `CMakeLists.txt`, meaning: In that file is the description on what programs can be executed by the "Play Button".
+
+_This is optional! You can also just use the terminal/shell to compile and run your programs manually!_
+
+---
+
+## EDIT: The `CMakeLists.txt` file - #2
+
+```cmake
+cmake_minimum_required(VERSION 3.16)
+project(tutorial_01 C)
+
+set(CMAKE_C_STANDARD 99)
+
+add_executable(example_1_1 examples/example_01_hello_world.c)
+add_executable(example_1_2 examples/example_02_hello_math.c)
+```
+
+Every line `example_1_1(...)` adds a different program that can be compiled to the list.
+
+The **first value** (`example_1_1` or `example_1_2`) is the name of your program. But you can freely choose that name! This is just the name that appears next to the play button.
+
+The **second value** (`examples/example_01_hello_world.c` or `examples/example_02_ hello_math.c`) is the name of your C-file that belongs to that project.
+
+---
+
+## EDIT: The `CMakeLists.txt` file - #3
+
+When you want to add new C-scripts then you can just add one more line with `add_executable(...)`:
+
+<br/>
+
+```cmake
+cmake_minimum_required(VERSION 3.16)
+project(tutorial_01 C)
+
+set(CMAKE_C_STANDARD 99)
+
+add_executable(example_1_1 examples/example_01_hello_world.c)
+add_executable(example_1_2 examples/example_02_hello_math.c)
+add_executable(example_1_3 examples/one_more_file.c)
+```
+
+<br/>
+
+Right left of the "Play Button" there is a drop-down-menu where you can select the program to be executed by that button.
+
+---
+
+## EDIT: The `CMakeLists.txt` file - #4
+
+Some things to look out for:
+
+-   If you rename a file or move it to another folder/subfolder then you also have to make this change in the `CMakeLists.txt`
+
+-   Whenever you add new C-Files CLion might accidentally add them to existing `add_executable(...)` lines. Be careful that your `add_executable(...)` lines only have 2 arguments!
+
+-   If the "Play Button" is not green but gray there is probably an issue with your `CMakeLists.txt`
+
+-   If CLion shows some error about CMake and `gcc` is correctly installed (can be used in the terminal) then there is probably an issue with your `CMakeLists.txt`
+
+---
+
+## EDIT: The `CMakeLists.txt` file - #5
+
+-   If your Anti-Virus Software blocks the execution of your program then you have to set an exception for "Executing programs of unauthorized Developers" in the Anti-Virus-Settings
+-   Do **not** use characters like `ä`, `Ä`, `ö`, ..., `ß`, `/`, `\`, `,`, `.`, `:`, `!`, `^`, `°`, `$`, `%`, and spaces and so on in your directory and file names. **Avoiding spaces and dots** is really important! Obviously you can use a dot for your `.c` extension.
+
+---
+
 ## Will there be homework?
 
 Yes! But listen ... Learning theoretically about programming is like learning swimming in theory.

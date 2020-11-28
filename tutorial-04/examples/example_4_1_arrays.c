@@ -6,18 +6,15 @@
 
 #include <stdio.h>
 
-void print_int_array(int *array, int max)
-{
+void print_int_array(int *array, int max) {
     printf("\nPrinting array with length %d", max);
-    for (int i = 0; i < max; i++)
-    {
+    for (int i = 0; i < max; i++) {
         printf("\nIndex %d -> Value %d", i, array[i]);
     }
     printf("\n");
 }
 
-int main()
-{
+int main() {
     int my_array_1[10];
     int my_array_2[10] = {0};
 

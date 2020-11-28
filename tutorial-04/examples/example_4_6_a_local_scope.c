@@ -6,16 +6,14 @@
 
 #include <stdio.h>
 
-void increment_4(int number)
-{
+void increment_4(int number) {
     // A local copy of the variable `number` has been created.
     // Only that local copy will be incremented. The variable
     // `number` inside the main function remains untouched
     number = number + 4;
 }
 
-int main()
-{
+int main() {
 
     int number = 3;
     increment_4(number);

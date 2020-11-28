@@ -6,11 +6,9 @@
 
 #include <stdio.h>
 
-int main()
-{
+int main() {
 
-    for (int i = 0; i < 10; i++)
-    {
+    for (int i = 0; i < 10; i++) {
         printf("i is now %d\n", i);
     }
 

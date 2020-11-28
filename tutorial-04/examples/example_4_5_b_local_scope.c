@@ -6,12 +6,10 @@
 
 #include <stdio.h>
 
-int main()
-{
+int main() {
 
     // This loop is actually pretty useless
-    while (1)
-    {
+    while (1) {
         int i = 5;
         i += 2;
         break;

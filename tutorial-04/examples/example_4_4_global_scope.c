@@ -8,19 +8,15 @@
 
 int counter = 0;
 
-void a()
-{
+void a() {
     counter++;
 }
 
-void b()
-{
+void b() {
     counter++;
 }
 
-int main()
-{
-
+int main() {
     a();
     b();
     a();

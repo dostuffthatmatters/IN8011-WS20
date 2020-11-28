@@ -6,13 +6,11 @@
 
 #include <stdio.h>
 
-int increment_4(int number)
-{
+int increment_4(int number) {
     return number + 4;
 }
 
-int main()
-{
+int main() {
 
     int number = 3;
     number = increment_4(number);

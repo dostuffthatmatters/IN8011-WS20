@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.16)
+project(tutorial_04 C)
+
+set(CMAKE_C_STANDARD 99)
+set(GCC_COVERAGE_COMPILE_FLAGS "-Wall -Werror")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
+
+add_executable(example_4_1 examples/example_4_1_arrays.c)
+add_executable(example_4_2 examples/example_4_2_return.c)
+add_executable(example_4_3 examples/example_4_3_return_stop.c)
+add_executable(example_4_4 examples/example_4_4_global_scope.c)
+add_executable(example_4_5_a examples/example_4_5_a_local_scope.c)
+add_executable(example_4_5_b examples/example_4_5_b_local_scope.c)
+add_executable(example_4_6_a examples/example_4_6_a_local_scope.c)
+add_executable(example_4_6_b examples/example_4_6_b_local_scope.c)
+add_executable(example_4_7 examples/example_4_7_bad_readability.c)
+add_executable(example_4_8 examples/example_4_8_good_readability.c)
+
+add_executable(exercise_4_1_a exercises/exercise_4_1_a.c)
+add_executable(exercise_4_1_b exercises/exercise_4_1_b.c)
+add_executable(exercise_4_2_a exercises/exercise_4_2_a_main.c)
+add_executable(exercise_4_2_b exercises/exercise_4_2_b_main.c)
+add_executable(exercise_4_2_c exercises/exercise_4_2_c_main.c)

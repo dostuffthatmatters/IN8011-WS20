@@ -1,5 +1,6 @@
 ---
 marp: true
+paginate: true
 ---
 
 <style>
@@ -9,9 +10,9 @@ img[alt~="center"] {
 }
 </style>
 
-# Tutorial 04 - 12.11.2019
+# Tutorial 04 - 30.11./03.12.2020
 
-Group 06 - Moritz Makowski
+Group 02/11 - Moritz Makowski
 
 <br/>
 
@@ -37,7 +38,7 @@ You often want to store a lot of related variables with the same type in one pla
 
 <br/>
 
-The following code won't be very pleasant to read:
+The following code is not very pleasant to read:
 
 ```c
 int a_1 = 14;
@@ -49,7 +50,7 @@ int a_4 = 30;
 
 <br/>
 
-Use an array instead! Example:
+Use an array instead:
 
 ```c
 int a[10] = {14, 23, 87, 30, ...};
@@ -129,7 +130,7 @@ int number_at_spot_3 = my_array[2];  // number_at_spot_3 == 9
 
 <br/>
 
-The number used inside the square brackets to reference the element is called **index**. Retrieving an element from an array is also called **indexing**. The index of a list **starts a `0`**!
+The number used inside the square brackets to reference the element is called **index**. Retrieving an element from an array is also called **"indexing"**. The index of a list **starts a `0`**!
 
 <br/>
 
@@ -142,7 +143,7 @@ The number used inside the square brackets to reference the element is called **
 You can also use that square bracket notation to rewrite specific elements of that array.
 
 ```c
-int my_array[5] = {1, 4, 9, 15, 25}
+int my_array[5] = {1, 4, 9, 10, 25}
 
 my_array[3] = 16;
 
@@ -179,7 +180,7 @@ What this code does is, it **delegates** a specific task (printing out something
 
 ---
 
-![center](Coding_Meme_Code_Example.jpg)
+![center](images/T04-01.jpg)
 
 ---
 
@@ -218,7 +219,7 @@ int main() {
 ```c
 #include <stdio.h>
 
-void print_int_array (int *array, int max) {
+void print_int_array(int *array, int max) {
     printf("\nPrinting array with length %d", max);
     for (int i=0; i<max; i++) {
         printf("\nIndex %d -> Value %d", i, array[i]);
@@ -247,7 +248,7 @@ int main() {
 This line is called the **method signature** which uniquely identifies this function. You cannot use the same function name twice (in the same scope).
 
 ```c
-void print_int_array (int *array, int max)
+void print_int_array(int *array, int max)
 ```
 
 <br/>
@@ -271,12 +272,12 @@ _Clarification: `method` and `function` are terms for basically the same thing._
 ---
 
 ```c
-void print_int_array (int *array, int max)
+void print_int_array(int *array, int max)
 ```
 
 Inside the method signature we define a few things:
 
--   `void` means that the function does not return a value (Wait a few slides)
+-   `void` means that the function does not return a value (Explained in a few slides)
 -   `print_int_array` is the functions name
 -   `(int* array, int max)` are **function parameters** that are **passed to the function**
 
@@ -287,7 +288,7 @@ Inside the method signature we define a few things:
 See how the parameters `array` (array of integers) and `max` (integer) are used inside the function's body:
 
 ```c
-{
+void print_int_array(int *array, int max) {
     printf("\nPrinting array with length %d", max);
     for (int i=0; i<max; i++) {
         printf("\nIndex %d -> Value %d", i, array[i]);
@@ -305,16 +306,17 @@ Blocks of code can not only execute stuff (`printf`, etc.) but also calculate st
 Let's say we want to multiply some number `n`, `m`-times with itself ($n^{m}$).
 
 ```c
+// calculates n^m
 int power(int n, int m) {
-    int result = n;
-    for (int i=1; i<m; i++) {
+    int result = 1;
+    for (int i=0; i<m; i++) {
         result = result * n;
     }
     return result;
 }
 ```
 
-_See `example_4_2_return.c` on GitHub_
+_See `example_4_2_return.c`._
 _You can also use `pow(n, m)` from the library `math.h` for that._
 
 ---
@@ -324,9 +326,10 @@ _You can also use `pow(n, m)` from the library `math.h` for that._
 ```c
 #include <stdio.h>
 
+// calculates n^m
 int power(int n, int m) {
-    int result = n;
-    for (int i=1; i<m; i++) {
+    int result = 1;
+    for (int i=0; i<m; i++) {
         result = result * n;
     }
     return result;
@@ -465,7 +468,7 @@ int main() {
 }
 ```
 
-_See `example_4_4_gobal_scope.c` on GitHub._
+_See `example_4_4_gobal_scope.c`._
 
 ---
 
@@ -512,7 +515,7 @@ This file cannot be compiled because `i` is being accessed from outside its scop
 
 <br/>
 
-_See `example_4_5_a_local_scope.c` and `example_4_5_b_local_scope.c` on GitHub._
+_See `example_4_5_a_local_scope.c` and `example_4_5_b_local_scope.c`._
 
 ---
 
@@ -521,7 +524,7 @@ _See `example_4_5_a_local_scope.c` and `example_4_5_b_local_scope.c` on GitHub._
 ```c
 #include <stdio.h>
 
-void increment_4 (int number) {
+void increment_by_4 (int number) {
     // A local copy of the variable `number` has been created.
     // Only that local copy will be incremented. The variable
     // 'number' inside the main function remains untouched
@@ -530,13 +533,13 @@ void increment_4 (int number) {
 
 int main() {
     int number = 3;
-    increment_4(number);
+    increment_by_4(number);
     printf("Outside: number is now %d\n", number);
     return 0;
 }
 ```
 
-_See `example_4_6_a_local_scope_.c` on GitHub._
+_See `example_4_6_a_local_scope_.c`._
 
 ---
 
@@ -545,7 +548,7 @@ _See `example_4_6_a_local_scope_.c` on GitHub._
 ```c
 #include <stdio.h>
 
-int increment_4(int number) {
+int increment_by_4(int number) {
     // Use a return statement to pass the calculated value back to 'main'
     return number + 4;
 }
@@ -553,7 +556,7 @@ int increment_4(int number) {
 int main() {
 
     int number = 3;
-    number = increment_4(number);
+    number = increment_by_4(number);
 
     printf("Outside: number is now %d\n", number);
 
@@ -579,7 +582,7 @@ I will cover the keyword `static` in two weeks when we will learn how to work wi
 
 ---
 
-![center](Coding_Meme_Understanding_Your_Own_Code_1.png)
+![center](images/T04-02.png)
 
 ---
 
@@ -685,21 +688,17 @@ Now look at `example_4_8_good_readability.c`, which does exactly the same.
 
 _You can put all your code inside main (in the beginning, while testing your logic) and later divide it into functions. You can also start with separate functions right away._
 
-<br/>
-
-_In case you are super curious you can have a look at the folder `additional-exercises` on GitHub._
-
 ---
 
 ## See You Next Week!
 
-All **code examples** and **exercise solutions** (available right after my tutorial) on **GitHub**.
-https://github.com/dostuffthatmatters/Engineering-Informatics-1-MSE-WS1920.
+All **code examples** and **exercise solutions** on **GitLab** (solutions right after my tutorial):
+https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20
 
 <!-- Generated with https://www.qrcode-monkey.com/de -->
 
-![w:250 center](../images/github-qr-code.svg)
+![w:300 center](../gitlab-qr-code.png)
 
 ---
 
-![w:550 center](../images/meme-04.jpg)
+![w:550 center](../memes/tutorial-04.jpg)

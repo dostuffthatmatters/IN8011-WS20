@@ -4,9 +4,9 @@ slides/additional-exercises**
 **/.idea/
 **/cmake-build-debug/
 
-tutorial-04*
-tutorial-05*
-tutorial-06*
+tutorial-04/exercises
+tutorial-05/exercises
+tutorial-06/exercises
 tutorial-07*
 tutorial-08*
 tutorial-09*

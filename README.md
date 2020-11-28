@@ -10,21 +10,42 @@
 
 ### Tutorial Sessions:
 
-Tutorial 01 - 09.11.20/12.11.20 - **Introduction, Installation** <br/>
+Tutorial 01 - 09.11./12.11.20 - **Introduction, Installation** <br/>
 Download:
 [Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-01) |
 [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T01-moritz-makowski.pdf?inline=false)
 
 <br/>
 
-Tutorial 02 - 16.11.20/19.11.20 - **Data Types, Boolean Logic, Arithmetic and Basic Control Flow** <br/>
+Tutorial 02 - 16.11./19.11.20 - **Data Types, Boolean Logic, Arithmetic and Basic Control Flow** <br/>
 Download:
 [Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-02) |
 [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T02-moritz-makowski.pdf?inline=false)
 
 <br/>
 
-Tutorial 03 - 23.11.20/26.11.20 - **File Structure, Input/Output and More Control Flow** <br/>
+Tutorial 03 - 23.11./26.11.20 - **File Structure, Input/Output and More Control Flow** <br/>
 Download:
 [Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-03) |
 [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T03-moritz-makowski.pdf?inline=false)
+
+<br/>
+
+Tutorial 04 - 30.11./03.12.20 - **Arrays, Functions, Scope and Readability** <br/>
+Download:
+[Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-04) |
+[Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T04-moritz-makowski.pdf?inline=false)
+
+<br/>
+
+Tutorial 05 - 07.12./10.12.20 - **Multidimensional Arrays, Type Casting, Structs and Enums** <br/>
+Download:
+[Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-05) |
+[Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T05-moritz-makowski.pdf?inline=false)
+
+<br/>
+
+Tutorial 06 - 14.12./17.12.20 - **Multiple Files, `static`** <br/>
+Download:
+[Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-06) |
+[Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T06-moritz-makowski.pdf?inline=false)

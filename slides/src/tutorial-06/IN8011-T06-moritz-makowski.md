@@ -1,5 +1,6 @@
 ---
 marp: true
+paginate: true
 ---
 
 <style>
@@ -9,9 +10,9 @@ img[alt~="center"] {
 }
 </style>
 
-# Tutorial 06 - 26.11.2019
+# Tutorial 06 - 14.12./17.12.2020
 
-Group 06 - Moritz Makowski
+Group 02/11 - Moritz Makowski
 
 <br/>
 
@@ -64,7 +65,7 @@ That's because they are using so called "header"-files to manage what functions/
 
 Every `.c`-file that implements functionality which is used in some other `.c`-file should have a header-file.
 
-It's best to have the same name for these two files. E.g.: `my_file.c` and `my_file.h`. Normally you have each `.h` and `.c` file in the same directory.
+It's best to have the same name for these two files. E.g.: `print_matrices.c` and `print_matrices.h`. Normally you have each `.h` and `.c` file in the same directory.
 
 The basic structure of a header file:
 
@@ -81,10 +82,10 @@ The basic structure of a header file:
 
 ## Shared Functions - #1
 
-`my_file.h`:
+`print_matrices.h`:
 ```h
-#ifndef FILENAME_H
-#define FILENAME_H
+#ifndef PRINT_MATRICES_H
+#define PRINT_MATRICES_H
 
 // Only this method is meant to be shared
 void print_int_matrix(int rows, int columns, int matrix[rows][columns]);
@@ -96,11 +97,11 @@ void print_int_matrix(int rows, int columns, int matrix[rows][columns]);
 
 ## Shared Functions - #2
 
-`my_file.c`:
+`print_matrices.c`:
 ```c
 #include <stdio.h>
 
-#include "my_file.h";
+#include "print_matrices.h";
 
 /**...*/
 int longest_number_in_matrix(int rows, int columns, int matrix[rows][columns])
@@ -142,7 +143,7 @@ Compile these with:
 
 <br/>
 
-Notice: Only the `.c` files are listed here!
+Notice that only the `.c` files are listed here!
 
 ---
 
@@ -152,7 +153,7 @@ Have a look at the directory `tutorial-06/example_6_1_shared_functions` on GitHu
 
 <br/>
 
-*You can ignore the file `README.md`.*
+*The file `README.md` just contains the compilation string again.*
 
 ---
 
@@ -249,7 +250,7 @@ Compile these with:
 
 <br/>
 
-Notice: Only the `.c` files are listed here!
+Notice that only the `.c` files are listed here!
 
 ---
 
@@ -259,7 +260,7 @@ Have a look at the directory `tutorial-06/example_6_1_shared_variables` on GitHu
 
 <br/>
 
-*You can ignore the file `README.md`.*
+*The file `README.md` just contains the compilation string again.*
 
 ---
 
@@ -327,13 +328,19 @@ You can also say: Declaring a local static variable creates a new variable which
 
 ---
 
+![center w:600](images/T06-01.jpg)
+
+---
+
 ## Static Local Variables - #2
 
 *I know that this sounds rather confusing!*
 
 <br/>
 
-**Have a look at `example_6_3_local_static.c`!** Really try to follow the programs execution.
+**Have a look at `example_6_3_local_static.c`!**
+
+You can comment out the `printf` statements for each variable individually to get a grasp of what is going on.
 
 <br/>
 
@@ -343,13 +350,13 @@ You can also say: Declaring a local static variable creates a new variable which
 
 ## See You Next Week!
 
-All **code examples** and **exercise solutions** (available right after my tutorial) on **GitHub**.
-https://github.com/dostuffthatmatters/Engineering-Informatics-1-MSE-WS1920.
+All **code examples** and **exercise solutions** on **GitLab** (solutions right after my tutorial):
+https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20
 
 <!-- Generated with https://www.qrcode-monkey.com/de -->
-![w:250 center](../images/github-qr-code.svg)
+
+![w:300 center](../gitlab-qr-code.png)
 
 ---
 
-![w:600 center](../images/meme-06.jpg)
-
+![w:600 center](../memes/tutorial-06.jpg)

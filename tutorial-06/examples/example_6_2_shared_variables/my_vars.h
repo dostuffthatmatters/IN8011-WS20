@@ -5,8 +5,8 @@
 ************************************************************************************/
 
 
-#ifndef FILENAME_H
-#define FILENAME_H
+#ifndef MY_VARS_H
+#define MY_VARS_H
 
 #define PI_APPROX 3.141592
 // PI_APPROX is now accessible as a float in-

@@ -586,7 +586,7 @@ I will cover the keyword `static` in two weeks when we will learn how to work wi
 
 ---
 
-## Readable Code : 1. Consistent Style
+## Readable Code: 1. Consistent Style
 
 -   Consistent **naming of variables**:
 
@@ -602,7 +602,7 @@ I will cover the keyword `static` in two weeks when we will learn how to work wi
 
 ---
 
-## Readable Code : 2. Descriptive naming
+## Readable Code: 2. Descriptive naming
 
 -   Descriptive variable names
 
@@ -626,7 +626,7 @@ I will cover the keyword `static` in two weeks when we will learn how to work wi
 
 ---
 
-## Readable Code : 3. Documenting your Code - #1
+## Readable Code: 3. Documenting your Code - #1
 
 In order to be able to explain someone what your code does without having to explain it to him in person, you have to write documentation about your code.
 
@@ -642,7 +642,7 @@ Multi-Line Comment
 
 ---
 
-## Readable Code : 3. Documenting your Code - #2
+## Readable Code: 3. Documenting your Code - #2
 
 In C you should comment your functions by using the Doxygen-Format, which looks like:
 
@@ -669,24 +669,6 @@ Can you figure out what the program `example_4_7_bad_readability.c` does?
 <br/>
 
 Now look at `example_4_8_good_readability.c`, which does exactly the same.
-
----
-
-## **Exercise 4.3: Arrays and Functions**
-
-**(a)** Return the largest element in a list.
-
-**(b)** Reverse a list. Assume a fixed length of 10 elements!
-
-**(c)** Check whether an element occurs in a list.
-
-**(d)** Compute the running total of a list.
-
-**(f)** Test whether a string is a palindrome.
-
-<br/>
-
-_You can put all your code inside main (in the beginning, while testing your logic) and later divide it into functions. You can also start with separate functions right away._
 
 ---
 

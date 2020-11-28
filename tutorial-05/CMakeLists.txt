@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.16)
+project(tutorial_05 C)
+
+set(CMAKE_C_STANDARD 99)
+set(GCC_COVERAGE_COMPILE_FLAGS "-Wall -Werror")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
+
+add_executable(example_5_1 examples/example_5_1_matrix_initialisation.c)
+add_executable(example_5_2 examples/example_5_2_diagonal_matrix.c)
+add_executable(example_5_3 examples/example_5_3_struct_array.c)
+add_executable(example_5_4 examples/example_5_4_enums.c)
+
+add_executable(exercise_5_1_a exercises/exercise_5_1_a.c)
+add_executable(exercise_5_1_b exercises/exercise_5_1_b.c)
+add_executable(exercise_5_1_c exercises/exercise_5_1_c.c)
+add_executable(exercise_5_1_d exercises/exercise_5_1_d.c)
+add_executable(exercise_5_1_e exercises/exercise_5_1_e.c)
+add_executable(exercise_5_2 exercises/exercise_5_2_matrix_main.c)
+add_executable(exercise_5_3_abcd exercises/exercise_5_3_abcd.c)
+add_executable(exercise_5_3_efg exercises/exercise_5_3_efg.c)
+add_executable(exercise_5_3_efg_advanced exercises/exercise_5_3_efg_advanced.c)

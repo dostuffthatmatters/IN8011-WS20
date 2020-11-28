@@ -1,5 +1,6 @@
 ---
 marp: true
+paginate: true
 ---
 
 <style>
@@ -9,9 +10,9 @@ img[alt~="center"] {
 }
 </style>
 
-# Tutorial 05 - 19.11.2019
+# Tutorial 05 - 07.12./10.12.2020
 
-Group 06 - Moritz Makowski
+Group 02/11 - Moritz Makowski
 
 <br/>
 
@@ -55,10 +56,6 @@ A short revision of **functions**.
 
 *You can put all your code inside `main` (in the beginning, while testing your logic) and later divide it into functions. You can also start with separate functions right away.*
 
-<br/>
-
-*In case you are super curious you can have a look at the folder `additional-exercises` on GitHub.*
-
 ---
 
 ## Multidimensional Arrays
@@ -96,15 +93,14 @@ int my_matrix[3][4] = {
 };
 ```
 
-![w:350 center](matrix.png)
+![w:350 center](images/T05-01.png)
 
-*Source: https://www.dyclassroom.com/*
-
+*Image Source: [https://www.dyclassroom.com/](https://www.dyclassroom.com/)*
 *See `example_5_1_matrix_initialisation.c` on GitHub.*
 
 ---
 
-![w:350 center](matrix.png)
+![w:350 center](images/T05-01.png)
 
 <br/>
 
@@ -223,8 +219,6 @@ int main() {
   point_2.y = 7.5;
   point_2.z = 0.4;
 
-  ...
-
   return 0;
 }
 ```
@@ -253,15 +247,13 @@ int main() {
     .z = 0.4
   };
 
-  ...
-
   return 0;
 }
 ```
 
 ---
 
-## Example Usecase: Points with 3D Coordinates - Beautiful
+## Example Usecase: Points with 3D Coordinates - Perfect
 
 ```c
 struct point {
@@ -272,10 +264,7 @@ struct point {
 
 int main() {
   struct point point_1 = {12, 8.5, 0.2};
-
   struct point point_2 = {12.1, 7.5, 0.4};
-
-  ...
 
   return 0;
 }
@@ -286,8 +275,8 @@ int main() {
 ## Why should you use `struct`'s? - #1
 
 1. Cleaner code
-2. Less variable_names
-3. Consistency accross same units is not only desired but required
+2. Less variable names
+3. Consistency accross same "object types" is required
 
 ---
 
@@ -320,7 +309,7 @@ union my_union {
 
 ---
 
-![w:700 center](Coding_Meme_wat.jpg)
+![w:700 center](images/T05-02.jpg)
 
 ---
 
@@ -349,7 +338,7 @@ m.letters[3];           //                                    0000 1111
 
 ---
 
-## Using Enum's
+## Enum's
 
 **Example usecase:** Using variables that are supposed to store/represent a state, which is encoded in the form of an integer. E.g. the state of a traffic light.
 
@@ -397,7 +386,7 @@ enum color_2 {
 
 **(a)** Create a **`struct rectangle`** for a rectangle containing its length and width as `double` values.
 
-**(b)** Create a **`struct triangle`** for a right triangle containing the length of its hypothenuse and its altitude as `double` values.
+**(b)** Create a **`struct triangle`** for a right triangle containing the length of its hypotenuse and its height as `double` values.
 
 **(c)** Create a **`struct circle`** for a circle containing its radius as `double` value.
 
@@ -409,7 +398,7 @@ enum color_2 {
 
 **(e)** Create an **`enum shape_type`** with a value for each of the shapes created above.
 
-**(f)** Create a **`struct shape`** that uses a union to hold any of the shapes created above and in addition an `enum` indicating which type of shape is currently in use.
+**(f)** Create a **`struct shape`** that uses a `union` to hold any of the shapes created above and in addition an `enum` indicating which type of shape is currently in use.
 
 **(g)** Create a function **`shape_area`** that gets a shape as parameter. The function should then print the type and the area of the contained shape. Finally the function should return the area of the shape as a `double`.
 
@@ -419,13 +408,13 @@ enum color_2 {
 
 ## See You Next Week!
 
-All **code examples** and **exercise solutions** (available right after my tutorial) on **GitHub**.
-https://github.com/dostuffthatmatters/Engineering-Informatics-1-MSE-WS1920.
+All **code examples** and **exercise solutions** on **GitLab** (solutions right after my tutorial):
+https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20
 
 <!-- Generated with https://www.qrcode-monkey.com/de -->
-![w:250 center](../images/github-qr-code.svg)
+
+![w:300 center](../gitlab-qr-code.png)
 
 ---
 
-![w:450 center](../images/meme-05.jpg)
-
+![w:450 center](../memes/tutorial-05.jpg)

@@ -23,9 +23,9 @@ int is_diagonal(char rows, char columns, int matrix[rows][columns]) {
         return 0;
     }
 
-    for (char row=0; row<rows; row++) {
-        for (char column=0; column<columns; column++) {
-            if (row != column && matrix[row][column] != 0) {
+    for (int row=0; row<rows; row++) {
+        for (int column=0; column<columns; column++) {
+            if ((row != column) && (matrix[row][column] != 0)) {
                 // Non-Zero element somewhere else than on the diagonal
                 return 0;
             }
@@ -52,9 +52,9 @@ int main() {
     };
 
     int matrix_2[3][3] = {
-            {-1,   0,   0},
-            {0,   6,   0},
-            {0,   0, -200}
+            {-1,  0,    0},
+            { 0,  6,    0},
+            { 0,  0, -200}
     };
 
     print_int_matrix(3, 4, matrix_1);

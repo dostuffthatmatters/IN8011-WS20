@@ -12,7 +12,7 @@ img[alt~="center"] {
 
 # Tutorial 03 - 23.11./26.11.2020
 
-Group 02/11 - Moritz Makowski
+Group 02/11 - Moritz Makowski - moritz.makowski@tum.de
 
 <br/>
 

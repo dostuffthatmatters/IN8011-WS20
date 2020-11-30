@@ -12,7 +12,7 @@
  * @param number - The number for which the checksum should be calculated
  * @return checksum of that number
  */
-int calculate_cecksum(int number) {
+int calculate_checksum(int number) {
     // The single digits will be successively added to the result
     int result = 0;
     
@@ -28,8 +28,8 @@ int calculate_cecksum(int number) {
 }
 
 int main() {
-    int number = 469;
-    int checksum = calculate_cecksum(number);
+    int number = 12965;
+    int checksum = calculate_checksum(number);
 
     printf("%d\n", checksum);
     return 0;

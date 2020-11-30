@@ -49,3 +49,10 @@ Tutorial 06 - 14.12./17.12.20 - **Multiple Files, `static`** <br/>
 Download:
 [Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-06) |
 [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T06-moritz-makowski.pdf?inline=false)
+
+<br/>
+
+### More Material:
+
+**Additional Exercises** (optional):
+Download: [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-additional-exercises-moritz-makowski.pdf?inline=false)

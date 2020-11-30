@@ -20,6 +20,18 @@ Group 02/11 - Moritz Makowski - moritz.makowski@tum.de
 
 ---
 
+## Homework Feedback
+
+* Use inline values when only using them once
+* `for` instead of `while`
+* External `for`-variables can be useful
+* Constant indentation! (Also covered today)
+* No special characters/umlaute
+* Column 80
+* Remove all `printf`-statements before submitting
+
+---
+
 ## Today's Agenda
 
 -   Arrays
@@ -28,7 +40,7 @@ Group 02/11 - Moritz Makowski - moritz.makowski@tum.de
 -   **Exercise 4.2: Functions**
 -   Scope
 -   What Makes Code Readable?
--   **Exercise 4.3: Practice**
+-   **Time for more practice/questions**
 
 ---
 

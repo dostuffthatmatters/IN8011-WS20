@@ -55,4 +55,4 @@ Download:
 ### More Material:
 
 **Additional Exercises** (optional):
-Download: [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-additional-exercises-moritz-makowski.pdf?inline=false)
+Download: [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-additional-exercises-mm.pdf?inline=false)

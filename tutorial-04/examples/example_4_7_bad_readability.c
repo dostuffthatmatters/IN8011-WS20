@@ -5,18 +5,19 @@
 ************************************************************************************/
 
 #include <stdio.h>
-#include <math.h>
 
 int my_func(int a) {
 int c = 0;
 while (a > 0) {
-int b = (a % 10);
-c += b;
-a -= b;
+c += (a % 10);
 a /= 10;
-} return c;
+}
+return c;
 }
 
 int main() {
-int a = 12965; int b = my_func(a);
-printf("%d\n", b); return 0;}
+int a = 12965;
+int b = my_func(a);
+printf("%d\n", b);
+return 0;
+}

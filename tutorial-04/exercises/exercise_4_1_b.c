@@ -12,9 +12,14 @@ int main() {
     int my_array[10];
 
     for (int i = 0; i < 10; i++) {
-        my_array[i] = (i+1) * (i+1);
+        // Initializing each element
+        my_array[i] = i + 1;
+    }
 
-        printf("\nIndex %d -> Value %d", i, my_array[i]); // Printing each element
+    for (int i = 0; i < 10; i++) {
+        my_array[i] = my_array[i] * my_array[i];
+
+        printf("\nIndex %d -> Value %d", i, my_array[i]);
     }
 
     return 0;

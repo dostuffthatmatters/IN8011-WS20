@@ -24,5 +24,10 @@ void print_tree(int lines) {
 
         printf("\n");
     }
+    for (int i = 0; i < (lines-1); i++) {
+        printf(" ");
+    }
+    printf("*");
+
     printf("\n");
 }

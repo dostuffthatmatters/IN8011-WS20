@@ -15,7 +15,7 @@ int is_binary(char *string, int length) {
         char c = string[i];
         if (c == '\0') {
             break;
-        } else if ((c != '0') && (c != '1')) {
+        } else if (!((c == '0') || (c == '1'))) {
             return 0;
         }
     }

@@ -18,12 +18,10 @@ int calculate_checksum(int number) {
     
     // Iterating over every decimal place
     while (number > 0) {
-        int remainder = (number % 10); // number = 1243 -> remainder = 3;
-        result += remainder;
-
-        number -= remainder; // 1243 -> 1240
-        number /= 10;        // 1240 -> 124
+        result += (number % 10); // number = 1243 -> result += 3;
+        number /= 10;            // 1243 -> 124
     }
+
     return result;
 }
 

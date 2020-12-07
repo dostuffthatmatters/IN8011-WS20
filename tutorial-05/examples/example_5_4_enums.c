@@ -15,8 +15,11 @@ enum color {
 
 int main() {
 
-    enum color state_1 = GREEN;
-    enum color state_2 = YELLOW;
+    // 0 = green
+    // 1 = yellow
+    // 2 = red
+
+    enum color state_1 = RED;
 
     printf("\nTL1: ");
     if (state_1 == RED) {
@@ -26,6 +29,8 @@ int main() {
     } else {
         printf("Go for it!");
     }
+
+    enum color state_2 = YELLOW;
 
     printf("\nTL2: ");
     switch (state_2) {

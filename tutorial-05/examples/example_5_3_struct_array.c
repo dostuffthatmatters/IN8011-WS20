@@ -16,7 +16,7 @@ struct point {
 void print_point_array(struct point *point_array, int length) {
     for (int i=0; i<length; i++) {
         printf(
-            "\nPoint a [x, y, z]: [%.1f, %.1f, %.1f]",
+            "\nPoint a [x, y, z]: [%f, %f, %f]",
             point_array[i].x, point_array[i].y, point_array[i].z
         );
     }

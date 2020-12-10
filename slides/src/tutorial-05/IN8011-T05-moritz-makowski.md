@@ -124,9 +124,9 @@ I have prepared a `main`-file for you called `exercise_5_2_matrix_main.c`.
 
 You are expected to implement two functions (either inside that file or in a separate file).
 
-**(a)** The function `int is_symmetric(char rows, char columns, int matrix[rows][columns])` returns `1` if the given matrix is symmetric and `0` otherwise.
+**(a)** The function `int is_symmetric(int rows, int columns, int matrix[rows][columns])` returns `1` if the given matrix is symmetric and `0` otherwise.
 
-**(b)** The function `int is_skew_symmetric(char rows, char columns, int matrix[rows][columns])` returns `1` if the given matrix is skew-symmetric and `0` otherwise.
+**(b)** The function `int is_skew_symmetric(int rows, int columns, int matrix[rows][columns])` returns `1` if the given matrix is skew-symmetric and `0` otherwise.
 
 ---
 

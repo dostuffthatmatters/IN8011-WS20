@@ -20,17 +20,9 @@ char is_skew_symmetric(int rows, int columns, int matrix[rows][columns]) {
         // of rows and columns can't be diagonal
         return 0;
     }
-
     for (int row=0; row<rows; row++) {
         for (int column=0; column<=row; column++) {
-
-            if (row == column) {
-                // In theory it should also work without this row==column if-clause
-                // because 0==-0. But on different CPU's you never know ...
-                if (matrix[row][column] != 0) {
-                    return 0;
-                }
-            } else if (matrix[row][column] != - matrix[column][row]) {
+            if (matrix[row][column] != -matrix[column][row]) {
                 // Non-Zero element somewhere else than on the diagonal
                 return 0;
             }

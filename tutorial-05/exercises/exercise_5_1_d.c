@@ -48,7 +48,9 @@ int main() {
     char string_6[10] = "AtabatA";
     char string_7[10] = "AtaatA";
 
-    printf("Is \"%s\" a palindrome: %d\n", string_1, is_palindrome(string_1, 10));
+    int result1 = is_palindrome(string_1, 10);
+
+    printf("Is \"%s\" a palindrome: %d\n", string_1, result1);
     printf("Is \"%s\" a palindrome: %d\n", string_2, is_palindrome(string_2, 10));
     printf("Is \"%s\" a palindrome: %d\n", string_3, is_palindrome(string_3, 10));
     printf("Is \"%s\" a palindrome: %d\n", string_4, is_palindrome(string_4, 10));

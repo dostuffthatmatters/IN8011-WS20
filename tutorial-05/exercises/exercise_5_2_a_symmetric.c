@@ -22,7 +22,7 @@ char is_symmetric(int rows, int columns, int matrix[rows][columns]) {
     }
 
     for (int row=0; row<rows; row++) {
-        for (int column=0; column<columns; column++) {
+        for (int column=0; column<row; column++) {
 
             if (matrix[row][column] != matrix[column][row]) {
                 // Non-Zero element somewhere else than on the diagonal

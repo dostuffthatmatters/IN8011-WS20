@@ -16,16 +16,18 @@
  *
  * @return 1 (if the given matrix is diagonal) or 0 (otherwise)
  */
-int is_diagonal(int rows, int columns, int matrix[rows][columns]) {
-    if (rows != columns) {
+int is_diagonal(int row_count, int column_count, int matrix[row_count][column_count]) {
+    if (row_count != column_count) {
         // Matrices that do not have the same number
         // of rows and columns can't be diagonal
         return 0;
     }
 
-    for (int row=0; row<rows; row++) {
+    for (int row=0; row<row_count; row++) {
 
-        for (int column=0; column<columns; column++) {
+        for (int column=0; column<column_count; column++) {
+
+
 
             if (row != column) {
                 if (matrix[row][column] != 0) {
@@ -61,7 +63,8 @@ int main() {
         { 0,  0, -200}
     };
 
-    if (is_diagonal(3, 4, matrix_1)) {
+    int res1 = is_diagonal(3, 4, matrix_1);
+    if (res1 == 1) {
         printf("\nMatrix 1 is diagonal.");
     } else {
         printf("\nMatrix 1 is NOT diagonal.");

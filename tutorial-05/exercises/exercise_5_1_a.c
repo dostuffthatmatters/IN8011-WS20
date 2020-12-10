@@ -16,7 +16,6 @@ int largest_element(int *array, int length) {
         if (array[i] > largest_element) {
             largest_element = array[i];
         }
-        printf("Index: %d, Largest Element: %d\n", i, largest_element);
     }
 
     return largest_element;

@@ -33,9 +33,9 @@ Group 02/11 - Moritz Makowski - moritz.makowski@tum.de
 
 ---
 
-## Why Should You Use Multiple Files?
+## Why to Use Multiple Files?
 
-* To further separate functionality
+* Separation of concerns
 * Reduce complexity in large projects
 * Make code available to other applications (e.g. libraries)
 
@@ -77,6 +77,14 @@ The basic structure of a header file:
 
 #endif
 ```
+
+---
+
+## Why to Use header files?
+
+* Clear distinction between public and private
+* To define a binding "contract" between two c-files (also called "interface")
+* Prevent circular imports
 
 ---
 
@@ -139,7 +147,7 @@ int main() {
 
 Compile these with:
 
-`gcc -Wall -Werror -std=css print_matrices.c main.c -o program.out`
+`gcc -Wall -Werror -std=c99 print_matrices.c main.c -o program.out`
 
 <br/>
 
@@ -149,7 +157,7 @@ Notice that only the `.c` files are listed here!
 
 ## Shared Functions - Example
 
-Have a look at the directory `tutorial-06/example_6_1_shared_functions` on GitHub.
+Have a look at the directory `tutorial-06/example_6_1_shared_functions`.
 
 <br/>
 
@@ -246,7 +254,7 @@ These will be accessible in side every file that includes this header.
 
 Compile these with:
 
-`gcc -Wall -Werror -std=css my_vars.c main.c -o program.out`
+`gcc -Wall -Werror -std=c99 my_vars.c main.c -o program.out`
 
 <br/>
 
@@ -256,7 +264,7 @@ Notice that only the `.c` files are listed here!
 
 ## Shared Variables/Constants - Example
 
-Have a look at the directory `tutorial-06/example_6_1_shared_variables` on GitHub.
+Have a look at the directory `tutorial-06/example_6_1_shared_variables`.
 
 <br/>
 
@@ -303,7 +311,7 @@ It behaves differently for local and for global variables.
 int var_a = 0;
 
 // static variable
-static var_b = 4;
+static int var_b = 4;
 ```
 
 ---
@@ -320,7 +328,7 @@ Benefits:
 
 ---
 
-## Static Local Variables - #1
+## Static Local Variables
 
 Static when used with local variables produces another variable that will - inside this scope - be used instead of the previously defined variable.
 
@@ -338,9 +346,13 @@ You can also say: Declaring a local static variable creates a new variable which
 
 <br/>
 
-**Have a look at `example_6_3_local_static.c`!**
+**Have a look at `example_6_4_static_local.c` and `example_6_5_static_global_*.c`!**
 
-You can comment out the `printf` statements for each variable individually to get a grasp of what is going on.
+---
+
+Brain teaser: Have a look at `example_6_3_static_lifetime_.c` and try to figure out, what is going on.
+
+You can comment out the `printf` statements for each variable individually to get a grasp of the procedure.
 
 <br/>
 

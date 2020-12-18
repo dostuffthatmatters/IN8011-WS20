@@ -16,9 +16,9 @@ int main() {
     int *pointer_b = &b;
     int *pointer_c = &c;
 
-    printf("\nThe address of a is %p", pointer_a);
-    printf("\nThe address of b is %p", pointer_b);
-    printf("\nThe address of c is %p", pointer_c);
+    printf("The address of a is %p\n", pointer_a);
+    printf("The address of b is %p\n", pointer_b);
+    printf("The address of c is %p", pointer_c);
 
     return 0;
 }

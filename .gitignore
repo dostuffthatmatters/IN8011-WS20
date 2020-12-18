@@ -3,9 +3,11 @@ marp-scripts/
 **/.idea/
 **/cmake-build-debug/
 **.html
+**.out
+**_live.c
 
 tutorial-06/exercises
-tutorial-07*
+tutorial-07/exercises/stack_solution
 tutorial-08*
 tutorial-09*
 tutorial-10*

@@ -52,6 +52,13 @@ Download:
 
 <br/>
 
+Tutorial 07 - 21.12./07.01.21 - **Higher-Order Functions, Pointers** <br/>
+Download:
+[Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-07) |
+[Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T07-moritz-makowski.pdf?inline=false)
+
+<br/>
+
 ### More Material:
 
 **Additional Exercises** (optional):

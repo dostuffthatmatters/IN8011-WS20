@@ -23,16 +23,16 @@ struct circle {
 };
 
 
-double rectangle_area(struct rectangle rectangle) {
-    return rectangle.length * rectangle.width;
+double rectangle_area(struct rectangle r) {
+    return r.length * r.width;
 }
 
-double triangle_area(struct triangle triangle) {
-    return 0.5 * triangle.height * triangle.hypotenuse;
+double triangle_area(struct triangle t) {
+    return 0.5 * t.height * t.hypotenuse;
 }
 
-double circle_area(struct circle circle) {
-    return M_PI * circle.radius * circle.radius;
+double circle_area(struct circle c) {
+    return M_PI * c.radius * c.radius;
 }
 
 int main() {

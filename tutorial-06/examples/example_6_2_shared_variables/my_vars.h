@@ -16,7 +16,6 @@ extern int global_var;
 
 void increment_local_var(int amount);
 void increment_global_var(int amount);
-
 int get_local_var();
 
 #endif

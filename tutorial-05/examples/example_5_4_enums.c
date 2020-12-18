@@ -8,23 +8,23 @@
 #include <stdio.h>
 
 enum color {
-    RED = 1,           //  1
-    YELLOW,            //  2
-    GREEN,             //  3
+    RED,
+    YELLOW,
+    GREEN,
 };
 
 int main() {
 
-    // 0 = green
-    // 1 = yellow
-    // 2 = red
+    // 1 = red
+    // 2 = yellow
+    // 3 = green
 
-    enum color state_1 = RED;
+    enum color traffic_light = RED;
 
     printf("\nTL1: ");
-    if (state_1 == RED) {
+    if (traffic_light == RED) {
         printf("Do not drive!");
-    } else if (state_1 == YELLOW) {
+    } else if (traffic_light == YELLOW) {
         printf("Maybe?!");
     } else {
         printf("Go for it!");

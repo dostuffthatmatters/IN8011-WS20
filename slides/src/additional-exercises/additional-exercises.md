@@ -214,6 +214,36 @@ For example 1 + 2 + 3 - 4 + 5 + 6 + 78 + 9 = 100.
 
 ---
 
+## **Exercise 13: Conway's Game of Life &#9733; &#9733; &#9733; &#9733; &#9734;**
+
+Write conways game of life in C. Here is an article explaining the simulation: <br/> https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+
+<br/>
+
+1. Generate a random matrix
+2. Draw (print) the matrix to the console
+3. Evolve the matrix by one simulation step
+4. Write an infinite loop (can be stopped with CTRL+C) for steps 2 and 3
+
+<br/>
+
+The result should look something like this:<br/> https://www.youtube.com/watch?v=p4xh7-MdmIc
+
+---
+
+What about the edge of the matrix? You can try three different strategies:
+
+* "Activating edge" = All Edge cells are "alive"
+* "Deactivating edge" = All Edge cells are "dead"
+* Infinite Plane = The Square is repeated indefinitely -> Indices ... 3 4 **0 1 2 3 4** 0 1 ...
+* Mirror -> 1 **0 1 2 3 4** 3
+  
+<br/>
+
+*I would go for an infinite plane but you could also try out any other approach ;)*
+
+---
+
 ## **Sources** (including more challenges)
 
 * https://adriann.github.io/programming_problems.html

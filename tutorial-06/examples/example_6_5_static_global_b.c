@@ -10,7 +10,7 @@
 static int LOOP_COUNT = 10;
 // Compiling does not work since PUBLIC_N
 // is declared twice
-int PUBLIC_N = 10;
+int PUBLIC_N = 43;
 
 int main() {
     my_func();

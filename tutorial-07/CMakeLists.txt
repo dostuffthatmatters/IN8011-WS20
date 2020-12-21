@@ -37,6 +37,11 @@ add_executable(
     example_7_8
     examples/example_7_8_array_pointer_access.c
 )
+add_executable(
+        example_7_9_live
+        examples/example_7_9_live.c
+)
+
 
 
 add_executable(
@@ -44,18 +49,18 @@ add_executable(
     exercises/stack_boilerplate/stack.c
     exercises/stack_boilerplate/main.c
 )
-# add_executable(
-#     stack_solution
-#     exercises/stack_solution/stack.c
-#     exercises/stack_solution/main.c
-# )
-# add_executable(
-#         stack_boilerplate_correction
-#         exercises/stack_boilerplate/stack.c
-#         exercises/stack_solution/main_correction.c
-# )
-# add_executable(
-#         stack_solution_correction
-#         exercises/stack_solution/stack.c
-#         exercises/stack_solution/main_correction.c
-# )
+add_executable(
+    stack_solution
+    exercises/stack_solution/stack.c
+    exercises/stack_solution/main.c
+)
+add_executable(
+        stack_boilerplate_correction
+        exercises/stack_boilerplate/stack.c
+        exercises/stack_solution/main_correction.c
+)
+add_executable(
+        stack_solution_correction
+        exercises/stack_solution/stack.c
+        exercises/stack_solution/main_correction.c
+)

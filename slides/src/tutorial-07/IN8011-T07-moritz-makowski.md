@@ -354,8 +354,8 @@ gcc -Wall -Werror -std=c99 stack.c main.c
 ```cmake
 add_executable(
     stack_boilerplate 
-    examples/stack_boilerplate/stack.c
-    examples/stack_boilerplate/main.c
+    exercises/stack_boilerplate/stack.c
+    exercises/stack_boilerplate/main.c
 )
 ```
 

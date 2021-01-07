@@ -307,7 +307,7 @@ struct Point *pointer_to_struct;
 
 Access by dereferencing the struct first
 ```c
-*(pointer_to_struct).x = 1.2;
+(*pointer_to_struct).x = 1.2;
 ```
 
 <br/>
@@ -366,6 +366,13 @@ add_executable(
 <br/>
 
 *You can modify `main.c` as you like to test all of the functionality.*
+
+<br/>
+
+*You can also test your implementation with a proper test procedure:*
+```bash
+gcc -Wall -Werror -std=c99 stack_boilerplate/stack.c stack_solution/main_correction.c
+```
 
 ---
 

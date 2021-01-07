@@ -19,7 +19,7 @@ void print_stack_debug(struct Stack* s) {
     printf("Printing Stack:\n");
 
     printf("s->top: %p\n", (s->top));
-    printf("s->bot: %p\n", (s->bottom));
+    printf("s->bot: %p\n", s->bottom);  // same expression as (*s).bottom
     printf("s->max: %d\n\n", (s->max));
 
     printf("Stack elements:\n");

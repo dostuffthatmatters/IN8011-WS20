@@ -15,9 +15,7 @@ int main() {
     scanf("%d", &n);
 
     f = factorial_loop(n);
-
     printf("factorial = %d", f);
-
 }
 
 /**

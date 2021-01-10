@@ -59,6 +59,13 @@ Download:
 
 <br/>
 
+Tutorial 08 - 11.01./14.01.21 - **Dynamic Memory Allocation, Recursion** <br/>
+Download:
+[Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-08) |
+[Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T08-moritz-makowski.pdf?inline=false)
+
+<br/>
+
 ### More Material:
 
 **Additional Exercises** (optional):

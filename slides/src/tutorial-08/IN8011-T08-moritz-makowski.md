@@ -15,7 +15,7 @@ Group 06 - Moritz Makowski
 
 <br/>
 
-## Dynamic Memory Allocation, Recursion, Practice Project "Equation Solver"
+## Dynamic Memory Allocation, Recursion, Practice Project "Paretheses Logic"
 
 ---
 

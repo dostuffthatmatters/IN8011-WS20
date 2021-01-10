@@ -17,7 +17,7 @@ int main() {
 
     printf("\n---------------------\n\n");
 
-    struct list *list = init_list();
+    struct List *list = init_list();
     print_list(list);
 
     printf("\nAppending 12\n");

@@ -33,7 +33,7 @@ void print_list(struct List *list) {
  * @return Pointer to the initialized list
  */
 struct List *init_list() {
-    struct List *list;  // just a placeholder
+    struct List *list = calloc(sizeof(struct List), 1);
     return list;
 }
 

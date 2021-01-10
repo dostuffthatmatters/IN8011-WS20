@@ -75,20 +75,7 @@ is_str_palindrome(str2);  // returns 0
 
 ---
 
-## **Exercise 4: Integer Palindrome** **&#9733; &#9733; &#9733; &#9734; &#9734;**
-
-Check whether a given **integer** is a number-palindrome.
-
-```c
-int num1 = 4218124;
-int num2 = 4124;
-is_int_palindrome(num1);  // returns 1
-is_int_palindrome(num2);  // returns 0
-```
-
----
-
-## **Exercise 5: String Anagram** **&#9733; &#9733; &#9733; &#9733; &#9734;**
+## **Exercise 4: String Anagram** **&#9733; &#9733; &#9733; &#9734; &#9734;**
 
 Check whether two given **strings** are an anagram.
 
@@ -103,6 +90,19 @@ is_str_anagram(str2, str3);  // returns 0
 <br/>
 
 *You can add case-insensitivity in there if you want ;)*
+
+---
+
+## **Exercise 5: Integer Palindrome** **&#9733; &#9733; &#9733; &#9733; &#9734;**
+
+Check whether a given **integer** is a number-palindrome.
+
+```c
+int num1 = 4218124;
+int num2 = 4124;
+is_int_palindrome(num1);  // returns 1
+is_int_palindrome(num2);  // returns 0
+```
 
 ---
 
@@ -123,7 +123,7 @@ is_num_anagram(num2, num3);  // returns 0
 **Bonus:** Leading zeros can be added to achieve an anamgram-relation:
 ```c
 int num1 = 30017;
-int num2 = 00317;  // stored as 317
+int num2 = 317;
 is_num_anagram(num1, num2);  // returns 1
 ```
 
@@ -227,7 +227,7 @@ Write conways game of life in C. Here is an article explaining the simulation: <
 
 <br/>
 
-The result should look something like this:<br/> https://www.youtube.com/watch?v=p4xh7-MdmIc
+The result should look something like this:<br/> https://www.youtube.com/watch?v=p4xh7-MdmIc or this https://www.youtube.com/watch?v=dBS99UWrTmQ
 
 ---
 

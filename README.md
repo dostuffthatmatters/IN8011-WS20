@@ -66,6 +66,15 @@ Download:
 
 <br/>
 
+Tutorial 09 - 18.01./21.01.21  - **Singly-Linked Lists** <br/>
+Download:
+[Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-09) |
+[Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T09-moritz-makowski.pdf?inline=false)
+
+<br/>
+
+
+
 ### More Material:
 
 **Additional Exercises** (optional):

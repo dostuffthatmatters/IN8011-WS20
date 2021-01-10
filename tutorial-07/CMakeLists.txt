@@ -37,11 +37,6 @@ add_executable(
     example_7_8
     examples/example_7_8_array_pointer_access.c
 )
-add_executable(
-        example_7_9_live
-        examples/example_7_9_live.c
-)
-
 
 
 add_executable(

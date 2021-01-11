@@ -17,8 +17,8 @@ int main() {
 
     int input_number = atoi(input_array);
     printf("You've entered: %d (\"%s\").\n\n", input_number, input_array);
-
-    int my_array_1[input_number] = {0};  // doesn't work!
+    
+    // int my_array_1[input_number] = {0};  // doesn't work!
     int *my_array_2 = calloc(sizeof(int), input_number);
 
     // Do not forget this!

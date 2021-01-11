@@ -16,7 +16,7 @@ Group 02/11 - Moritz Makowski - moritz.makowski@tum.de
 
 <br/>
 
-## Dynamic Memory Allocation, Recursion, Practice Project "Paretheses Logic"
+## Dynamic Memory Allocation, Recursion, Practice Project "Parentheses Logic"
 
 ---
 

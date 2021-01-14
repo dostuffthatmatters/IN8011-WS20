@@ -14,3 +14,5 @@ add_executable(example_8_5 examples/example_8_5_factorial_recursion.c)
 
 add_executable(exercise_8_1_a exercises/exercise_8_1_a_basic.c)
 add_executable(exercise_8_1_b exercises/exercise_8_1_b_advanced.c)
+
+add_executable(live examples/live_8.c)

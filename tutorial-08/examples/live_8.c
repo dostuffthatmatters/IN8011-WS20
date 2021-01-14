@@ -8,6 +8,7 @@ struct Point {
     float z;
 };
 
+// passing by value
 struct Point inc_10(struct Point s) {
     s.x += 10;
     s.y += 10;
@@ -15,6 +16,7 @@ struct Point inc_10(struct Point s) {
     return s;
 }
 
+// passing by reference
 void inc_10_r(struct Point *s) {
     s->x += 10;
     s->y += 10;

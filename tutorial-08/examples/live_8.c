@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+#include <stdlib.h>
 
 // Typ-Definition
 struct Point {
@@ -23,7 +24,26 @@ void inc_10_r(struct Point *s) {
     s->z += 10;
 }
 
+int *init_dynamic(int a) {
+    int *x = calloc(sizeof(int), 1);
+    *x = a;
+    return x;
+}
+
+/*
+int *init_static(int a) {
+    int x = a;
+    return &x; // does not compile with this
+}
+*/
+
 int main() {
+
+    int *p = init_dynamic(20);
+
+    // ...
+
+    free(p);
 
     struct Point a;
     a.x = 20;
@@ -41,4 +61,8 @@ int main() {
     printf("a.x = %f\n", a.x);
     inc_10_r(&a);
     printf("a.x = %f\n", a.x);
+
 }
+
+
+

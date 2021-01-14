@@ -8,6 +8,19 @@ struct Point {
     float z;
 };
 
+struct Point inc_10(struct Point s) {
+    s.x += 10;
+    s.y += 10;
+    s.z += 10;
+    return s;
+}
+
+void inc_10_r(struct Point *s) {
+    s->x += 10;
+    s->y += 10;
+    s->z += 10;
+}
+
 int main() {
 
     struct Point a;
@@ -21,4 +34,9 @@ int main() {
     printf("add y = %p\n", &(a.y));
     printf("add z = %p", &(a.z));
 
+    printf("a.x = %f\n", a.x);
+    a = inc_10(a);  // Please avoid that!!
+    printf("a.x = %f\n", a.x);
+    inc_10_r(&a);
+    printf("a.x = %f\n", a.x);
 }

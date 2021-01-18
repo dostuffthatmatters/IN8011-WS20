@@ -7,6 +7,32 @@
 
 #include <stdio.h>
 
+int is_valid_string(char *s, int l) {
+    char open_clips = 0;
+
+    for (int i = 0; i < l; i++) {
+
+        if (s[i] == '(') {
+            open_clips += 1;
+        }
+        if (s[i] == ')') {
+            open_clips -= 1;
+        }
+
+        // The string is not correct if there are closing parentheses
+        // ahead of their respective opening parentheses
+        if (open_clips < 0) {
+            return 0;
+        }
+    }
+
+    // The string is not correct if there are still open parentheses
+    if (open_clips != 0) {
+        return 0;
+    }
+
+    return 1;
+}
 int main() {
 
     char string[64] = {0};
@@ -14,20 +40,7 @@ int main() {
     scanf("%63s", string);
     // No flush needed because wo don't use scanf anymore.
 
-    char open_clips = 0;
-    char correct = 1;
-
-    for (int i = 0; i < 63; i++){
-        open_clips += (string[i] == '(') ? 1 : 0;
-        open_clips -= (string[i] == ')') ? 1 : 0;
-
-        // The string is not correct if there are closing parentheses
-        // ahead of their respective opening parentheses
-        correct = correct && (open_clips >= 0);
-    }
-
-    // The string is not correct if there are still open parentheses
-    correct = correct && (open_clips == 0);
+    char correct = is_valid_string(string, 63);
 
     if (correct) {
         printf("\nThe parentheses placement is correct.\n");

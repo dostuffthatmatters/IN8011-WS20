@@ -58,6 +58,28 @@ void remove_list(struct List *list) {
  */
 void append(struct List *list, int value) {
     // YOUR CODE HERE
+
+    // 1. Struct mit calloc initialisieren
+    // 2. struct->value = value
+
+    // Falls liste leer: listhead = neues element
+
+    // Fall list nicht leer:
+    // 3. Letzte Element der List finden
+    // 4. (letztes element).next = neues element
+
+
+    // Letztes element finden, Variant 1:
+    struct Node *last = list->head;
+    while (last->next != 0) {
+        last = last->next;
+    }
+
+    // Letztes element finden, Variante 2:
+    struct Node last_2 = *(list->head);
+    while (last_2.next != 0) {
+        last_2 = *(last_2.next);
+    }
 }
 
 

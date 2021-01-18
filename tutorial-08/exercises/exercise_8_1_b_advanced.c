@@ -152,11 +152,11 @@ void print_stack(struct Stack *stack) {
  * @param max_length - length of the char array
  * @return 1 if the parentheses placement is correct, 0 otherwise
  */
-int string_is_correct(char* string, int max_length) {
-    struct Stack *parentheses_stack = init_stack(15);
+int string_is_correct(char* s, int l) {
+    struct Stack *parentheses_stack = init_stack(l/2);
 
-    for (int i=0; i<max_length; i++) {
-        char character = string[i];
+    for (int i=0; i<l; i++) {
+        char character = s[i];
 
         if (character == 0) {
             // If string has ended
@@ -165,11 +165,7 @@ int string_is_correct(char* string, int max_length) {
 
         switch (character) {
             case '(':
-                push(parentheses_stack, character);
-                break;
             case '[':
-                push(parentheses_stack, character);
-                break;
             case '{':
                 push(parentheses_stack, character);
                 break;
@@ -208,6 +204,7 @@ int string_is_correct(char* string, int max_length) {
     }
 
     // All test cases passed.
+    free_stack(parentheses_stack);
     return 1;
 }
 

@@ -18,8 +18,8 @@ struct Node {
 };
 
 void print_list(struct List *list);
-
 struct List *init_list();
+
 void remove_list(struct List *list);
 
 void append(struct List *list, int value);

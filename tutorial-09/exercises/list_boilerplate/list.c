@@ -66,8 +66,7 @@ void append(struct List *list, int value) {
 
     // Fall list nicht leer:
     // 3. Letzte Element der List finden
-    // 4. (letztes element).next = neues element
-
+    // 4. letztes-element->next = neues element
 
     // Letztes element finden, Variant 1:
     struct Node *last = list->head;

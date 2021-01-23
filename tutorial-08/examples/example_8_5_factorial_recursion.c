@@ -24,9 +24,9 @@ int main() {
  * @return (n)*(n-1)*(n-2)*...*(1)
  */
 int factorial_recursion(int n) {
-    if (0 <= n && n <= 1) {
+    if (0 == n) {
         return 1;
     } else {
-        return n * factorial_recursion(n - 1);
+        return n * factorial_recursion(n-1);
     }
 }

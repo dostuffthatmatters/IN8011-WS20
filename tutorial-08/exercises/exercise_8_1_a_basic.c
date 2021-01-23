@@ -8,6 +8,7 @@
 #include <stdio.h>
 
 int is_valid_string(char *s, int l) {
+
     char open_clips = 0;
 
     for (int i = 0; i < l; i++) {
@@ -33,6 +34,7 @@ int is_valid_string(char *s, int l) {
 
     return 1;
 }
+
 int main() {
 
     char string[64] = {0};

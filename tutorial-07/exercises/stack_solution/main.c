@@ -12,8 +12,8 @@
 
 int main() {
     // Already implemented for you:
-    int max = 10;
-    char *stack_memory = malloc(sizeof(char) * max);
+    int max = 100;
+    char *stack_memory = calloc(sizeof(char), max);
     struct Stack my_stack;
     init_stack(&my_stack, stack_memory, max);
     printf("INITIALIZING");

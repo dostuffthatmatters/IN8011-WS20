@@ -153,7 +153,15 @@ void print_stack(struct Stack *stack) {
  * @return 1 if the parentheses placement is correct, 0 otherwise
  */
 int string_is_correct(char* s, int l) {
-    struct Stack *parentheses_stack = init_stack(l/2);
+
+    // "[{}]"
+
+    // [ -> stack: [
+    // { -> stack: [{
+    // } -> stack: [
+    // ] -> stack:
+
+    struct Stack *parentheses_stack = init_stack(l);
 
     for (int i=0; i<l; i++) {
         char character = s[i];

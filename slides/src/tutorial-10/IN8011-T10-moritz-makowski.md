@@ -10,13 +10,13 @@ img[alt~="center"] {
 }
 </style>
 
-# Tutorial 11 - 21.01.2020
+# Tutorial 10 - 25.01./28.01.21 
 
-Group 06 - Moritz Makowski
+Group 02/11 - Moritz Makowski - moritz.makowski@tum.de
 
 <br/>
 
-## Trees
+## Trees, BFS, DFS
 
 ---
 

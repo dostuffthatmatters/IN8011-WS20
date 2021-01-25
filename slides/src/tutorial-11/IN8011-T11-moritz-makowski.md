@@ -553,5 +553,5 @@ https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20
 
 ---
 
-![w:700 center](../memes/tutorial-12.png)
+![w:700 center](../memes/tutorial-11.png)
 

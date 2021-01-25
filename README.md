@@ -80,6 +80,19 @@ Download:
 
 <br/>
 
+Tutorial 11 - 01.02./04.02.21   - **Sorting Algorithms** <br/>
+Download:
+[Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-11) |
+[Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T11-moritz-makowski.pdf?inline=false)
+
+<br/>
+
+Tutorial 12 - 08.02./11.02.21   - **Revision** <br/>
+Download:
+[Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T12-moritz-makowski.pdf?inline=false)
+
+<br/>
+
 ### More Material:
 
 **Additional Exercises** (optional):

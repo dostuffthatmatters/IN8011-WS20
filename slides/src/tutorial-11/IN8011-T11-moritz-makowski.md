@@ -161,7 +161,7 @@ https://www.youtube.com/watch?v=nmhjrI-aW5o
 
 Implement a bubble sort algorithm in C.
 
-I do supply a template `exercise_12_02_bubble_sort_boilerplate.c` **but** you are free to use whichever program structure you prefer.
+I do supply a template `exercises/boilerplate/bubble_sort.c` but you are free to use whichever program structure you prefer.
 
 ---
 
@@ -389,7 +389,7 @@ https://www.youtube.com/watch?v=JSceec-wEyw
 
 Implement a merge sort algorithm in C.
 
-I do supply a template `exercise_12_04_merge_sort_boilerplate.c` **but** you are free to use whichever program structure you prefer.
+I do supply a template `exercises/boilerplate/merge_sort.c` but you are free to use whichever program structure you prefer.
 
 ---
 
@@ -538,7 +538,7 @@ https://www.youtube.com/watch?v=9FzT2I21F3k
 
 Implement a binary search on a standard already-sorted C-array.
 
-I do supply a template `exercise_12_05_binary_search_boilerplate.c` **but** you are free to use whichever program structure you prefer.
+I do supply a template `exercises/boilerplate/binary_search.c` but you are free to use whichever program structure you prefer.
 
 ---
 

@@ -1,4 +1,5 @@
 
+.vscode
 marp-scripts/
 **/.idea/
 **/cmake-build-debug/
@@ -6,9 +7,8 @@ marp-scripts/
 **.out
 **_live.c
 
-tutorial-11*
+tutorial-11/exercises/solution
 tutorial-12*
-tutorial-13*
 
 
 

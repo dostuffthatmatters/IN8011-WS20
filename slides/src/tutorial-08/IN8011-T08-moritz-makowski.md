@@ -8,6 +8,12 @@ img[alt~="center"] {
   display: block;
   margin: 0 auto;
 }
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: "Panton", sans-serif;
+}
+strong {
+    font-weight: 600
+}
 </style>
 
 # Tutorial 08 - 11.01./14.01.21 

@@ -8,6 +8,12 @@ img[alt~="center"] {
   display: block;
   margin: 0 auto;
 }
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: "Panton", sans-serif;
+}
+strong {
+    font-weight: 600
+}
 </style>
 
 # Tutorial 01 - 09.11./12.11.2020
@@ -580,4 +586,4 @@ _Don't worry, you don't have to know how Git and GitLab work to access these fil
 
 ---
 
-![w:700 center](../memes/tutorial-01.jpg)
+![w:650 center](../memes/tutorial-01.jpg)

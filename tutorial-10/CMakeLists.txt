@@ -10,6 +10,6 @@ add_executable(boilerplate
         exercises/tree/tree.c
         exercises/boilerplate/main.c)
 
-# add_executable(solution
-#        exercises/tree/tree.c
-#        exercises/solution/main.c)
+add_executable(solution
+       exercises/tree/tree.c
+       exercises/solution/main.c)

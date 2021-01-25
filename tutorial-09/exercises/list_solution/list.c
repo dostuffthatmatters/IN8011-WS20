@@ -33,6 +33,7 @@ void print_list(struct List *list) {
  */
 struct List *init_list() {
     struct List *list = calloc(sizeof(struct List), 1);
+    list->head = 0; // redundant due to calloc
     return list;
 }
 
@@ -48,6 +49,9 @@ void remove_list(struct List *list) {
         struct Node *tmp = list->head;
         list->head = list->head->next;
         free(tmp);
+        /* without tmp (not working)
+        free(list->head);
+        list->head = list->head->next;*/
     }
 
     free(list);
@@ -61,16 +65,23 @@ void remove_list(struct List *list) {
  * @param value - value to append
  */
 void append(struct List *list, int value) {
-    struct Node *node = calloc(sizeof(struct Node), 1);
+    // struct Node *node = calloc(sizeof(struct Node), 1);  // exactly the same
+    struct Node *node = calloc(1, sizeof(struct Node));
     node->value = value;
+    node->next = 0;  // redundant due to calloc
 
     if (list->head == 0) {
         list->head = node;
     } else {
+        // find the last element (tail)
         struct Node *tail = list->head;
         while (tail->next != 0) {
             tail = tail->next;
         }
+
+        // valid here: tail->next == 0
+
+        // append node to tail
         tail->next = node;
     }
 }
@@ -89,26 +100,34 @@ void append(struct List *list, int value) {
  * the list and 0 otherwise (list index out of range)
  */
 int insert(struct List *list, int value, int index) {
-    struct Node *node = calloc(sizeof(struct Node), 1);
-    node->value = value;
+    struct Node *new_node = calloc(sizeof(struct Node), 1);
+    new_node->value = value;
+
     if (index == 0) {
-        node->next = list->head;
-        list->head = node;
+        new_node->next = list->head;
+        list->head = new_node;
     } else {
+        // now: index > 0
+
+        // node_to_append_to has index (index - 1)
         struct Node *node_to_append_to = list->head;
         if (node_to_append_to == 0) {
+            // list is empty -> inserting at index > 0 not possible
+            free(new_node);
             return 0;
         }
 
         for (int i=1; i<index; i++) {
             node_to_append_to = node_to_append_to->next;
             if (node_to_append_to == 0) {
+                // list index out of range
+                free(new_node);
                 return 0;
             }
         }
 
-        node->next = node_to_append_to->next;
-        node_to_append_to->next = node;
+        new_node->next = node_to_append_to->next;
+        node_to_append_to->next = new_node;
     }
 
     return 1;
@@ -130,6 +149,7 @@ void remove_by_value(struct List *list, int value) {
     // at the head
     while (list->head != 0) {
         if (list->head->value == value) {
+            // remove the first list element
             struct Node *tmp = list->head;
             list->head = list->head->next;
             free(tmp);
@@ -138,8 +158,17 @@ void remove_by_value(struct List *list, int value) {
         }
     }
 
+    // now: list->head->value != value
+
+    // [1, 2, 3, 3, 3] -> remove 3
+    // node=1, node->next->value=2  -> list after: [1, 2, 3, 3, 3]
+    // node=2, node->next->value=3  -> list after: [1, 2, 3, 3]
+    // node=2, node->next->value=3  -> list after: [1, 2, 3]
+    // node=2, node->next->value=3  -> list after: [1, 2]
+    // node=2, node->next == 0
     for (struct Node *node = list->head; node->next != 0;) {
         if (node->next->value == value) {
+            // remove node->next
             struct Node *tmp = node->next;
             node->next = node->next->next;
             free(tmp);
@@ -171,6 +200,7 @@ int remove_by_index(struct List *list, int index) {
         free(tmp);
         return 1;
     } else {
+        // loop until node->next is the element to be deleted
         struct Node *node = list->head;
         for (int i=1; i<index; i++) {
             if (node->next == 0) {

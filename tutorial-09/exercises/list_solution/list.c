@@ -46,9 +46,10 @@ struct List *init_list() {
  */
 void remove_list(struct List *list) {
     while (list->head != 0) {
-        struct Node *tmp = list->head;
-        list->head = list->head->next;
-        free(tmp);
+        struct Node *old_head = list->head;
+        list->head = old_head->next;
+        free(old_head);
+
         /* without tmp (not working)
         free(list->head);
         list->head = list->head->next;*/
@@ -65,14 +66,18 @@ void remove_list(struct List *list) {
  * @param value - value to append
  */
 void append(struct List *list, int value) {
-    // struct Node *node = calloc(sizeof(struct Node), 1);  // exactly the same
-    struct Node *node = calloc(1, sizeof(struct Node));
+    // "calloc(1, sizeof(struct Node));" is exactly the same
+    struct Node *node = calloc(sizeof(struct Node), 1);
     node->value = value;
     node->next = 0;  // redundant due to calloc
 
     if (list->head == 0) {
+        // list is empty
         list->head = node;
+
     } else {
+        // list is not empty
+
         // find the last element (tail)
         struct Node *tail = list->head;
         while (tail->next != 0) {
@@ -100,32 +105,33 @@ void append(struct List *list, int value) {
  * the list and 0 otherwise (list index out of range)
  */
 int insert(struct List *list, int value, int index) {
-    struct Node *new_node = calloc(sizeof(struct Node), 1);
-    new_node->value = value;
 
     if (index == 0) {
+        struct Node *new_node = calloc(sizeof(struct Node), 1);
+        new_node->value = value;
         new_node->next = list->head;
         list->head = new_node;
+
     } else {
         // now: index > 0
 
-        // node_to_append_to has index (index - 1)
-        struct Node *node_to_append_to = list->head;
-        if (node_to_append_to == 0) {
+        if (list->head == 0) {
             // list is empty -> inserting at index > 0 not possible
-            free(new_node);
             return 0;
         }
 
+        // node_to_append_to has index (index - 1)
+        struct Node *node_to_append_to = list->head;
         for (int i=1; i<index; i++) {
             node_to_append_to = node_to_append_to->next;
             if (node_to_append_to == 0) {
                 // list index out of range
-                free(new_node);
                 return 0;
             }
         }
 
+        struct Node *new_node = calloc(sizeof(struct Node), 1);
+        new_node->value = value;
         new_node->next = node_to_append_to->next;
         node_to_append_to->next = new_node;
     }
@@ -143,6 +149,9 @@ int insert(struct List *list, int value, int index) {
  */
 void remove_by_value(struct List *list, int value) {
 
+    // [3, 3, 78, 3, 55, 1, 2, 3, 3, 3]
+    // remove: 3
+
     // Removing all nodes from the beginning of the
     // list that contain this value until the list is
     // either empty or a node with some other value is
@@ -150,9 +159,9 @@ void remove_by_value(struct List *list, int value) {
     while (list->head != 0) {
         if (list->head->value == value) {
             // remove the first list element
-            struct Node *tmp = list->head;
-            list->head = list->head->next;
-            free(tmp);
+            struct Node *old_head = list->head;
+            list->head = old_head->next;
+            free(old_head);
         } else {
             break;
         }
@@ -166,12 +175,20 @@ void remove_by_value(struct List *list, int value) {
     // node=2, node->next->value=3  -> list after: [1, 2, 3]
     // node=2, node->next->value=3  -> list after: [1, 2]
     // node=2, node->next == 0
+
+
+    // Immer wenn node->next->value == value: Lösche node->next
+    // Sonst: node = node->next
+
+    // [78, 3, 55, 1, 2, 3, 3, 3]
+    // node = 78,
     for (struct Node *node = list->head; node->next != 0;) {
-        if (node->next->value == value) {
+        if ((node->next)->value == value) {
             // remove node->next
             struct Node *tmp = node->next;
             node->next = node->next->next;
             free(tmp);
+
         } else {
             node = node->next;
         }

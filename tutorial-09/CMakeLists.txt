@@ -10,6 +10,6 @@ add_executable(list_boilerplate
         exercises/list_boilerplate/list.c
         exercises/list_boilerplate/main.c)
 
-# add_executable(list_solution
-#        exercises/list_solution/list.c
-#        exercises/list_solution/main.c)
+add_executable(list_solution
+       exercises/list_solution/list.c
+       exercises/list_solution/main.c)

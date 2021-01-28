@@ -354,6 +354,7 @@ Once you have fully traversed a subtree you go back to the previous node with a 
 ## DFS - "Going Deep"
 
 Now you have to go deep again and traverse the subtree's of **E**: Starting with **H**'s subtree.
+&nbsp;
 
 ![w:800 center](images/traversal_07.svg)
 
@@ -418,6 +419,9 @@ Print Result: A B C D E
 3. Right Subtree
 
 ![w:800 center](images/tree_09.svg)
+
+<br/>
+
 ```c
 Print Result: _ _ _ _ _
 ```

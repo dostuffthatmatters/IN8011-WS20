@@ -7,14 +7,14 @@ int brute_force_search(int length, int array[length], int value){
     return 0;
 }
 
-int binary_search_iterative(int length, int array[length], int value){
+int binary_search_recursive(int length, int array[length], int value){
     // YOUR CODE HERE
-    // No recursion! (no call of binary_search_iterative in here)
     return 0;
 }
 
-int binary_search_recursive(int length, int array[length], int value){
+int binary_search_iterative(int length, int array[length], int value){
     // YOUR CODE HERE
+    // No recursion! (no call of binary_search_iterative in here)
     return 0;
 }
 

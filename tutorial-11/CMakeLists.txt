@@ -19,15 +19,15 @@ add_executable(
         exercises/boilerplate/binary_search.c
 )
 
-# add_executable(
-#         bubble_sort_solution
-#         exercises/solution/bubble_sort.c
-# )
-# add_executable(
-#         merge_sort_solution
-#         exercises/solution/merge_sort.c
-# )
-# add_executable(
-#         binary_search_solution
-#         exercises/solution/binary_search.c
-# )
+add_executable(
+        bubble_sort_solution
+        exercises/solution/bubble_sort.c
+)
+add_executable(
+        merge_sort_solution
+        exercises/solution/merge_sort.c
+)
+add_executable(
+        binary_search_solution
+        exercises/solution/binary_search.c
+)

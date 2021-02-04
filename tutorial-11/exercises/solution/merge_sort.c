@@ -1,44 +1,40 @@
 
 #include "../print_array.c"
+#include <stdlib.h>
 
 /**
- * Returns a pointer to the newly created merged list which
- * has the combined length of length_1 and length_2.
+ * Merge two lists into a new list (tmp_array).
  *
  * @param l1 - Length of array1
  * @param l2 - Length of array2
  * @param array1
  * @param array2
- *
- * @return Pointer to the first element of the new int array
+ * @param tmp_array - The new array containing the merged lists
  */
-int *merge_lists(int l1, int l2, int *array1, int *array2){
+void merge_lists(int l1, int l2, int *array1, int *array2, int *tmp_array){
+    int i1=0;
+    int i2=0;
 
-    // We are going to need a new memory space for the new list.
-    int *new_array = calloc(sizeof(int), l1+l2);
-
-    /*
-     * We definitely could do merge sort without any extra memory
-     * space for the intermediate arrays, BUT we'd have to shift
-     * the whole array content around all the time. We'd save a
-     * little bit of memory but the processing time would increase
-     * a lot! (Depending on how long it takes to dynamically allo-
-     * cate memory)
-     */
-
-    int i1=0, i2=0;
-    while (i1+i2 < (l1+l2)) {
-        if ((i1 >= l1) || (array1[i1] > array2[i2])) {
-            // array_1 is already empty OR first element in array_2 is smaller
-            new_array[i1 + i2] = array2[i2++];
+    while ((i1<l1) || (i2<l2)) {
+        if (i1 >= l1) {
+            // array_1 is already empty
+            tmp_array[i1 + i2] = array2[i2];
             i2++;
+        
+        } else if (i2 >= l2) {
+            // array_2 is already empty
+            tmp_array[i1 + i2] = array1[i1];
+            i1++;
+        
+        } else if (array1[i1] > array2[i2]) {
+            tmp_array[i1 + i2] = array2[i2];
+            i2++;
+
         } else {
-            new_array[i1 + i2] = array1[i1++];
+            tmp_array[i1 + i2] = array1[i1];
             i1++;
         }
     }
-
-    return new_array;
 }
 
 void merge_sort(int length, int *array){
@@ -48,19 +44,26 @@ void merge_sort(int length, int *array){
         int l2 = (length - l1);
 
         // Recursive Call
-        merge_sort(length, array);
-        merge_sort(length, array + l1);
+        merge_sort(l1, array);
+        merge_sort(l2, array + l1); 
+
+        /*
+        There are other implementations of merge sort that do not need
+        extra memory space! However, this version is easier to understand
+        since it exactly implements the description.
+        */
 
         // Merge the two separately merge-sorted lists back together
-        int *new_array = merge_lists(l1, l2, array, array+l1);
+        int *tmp_array = calloc(sizeof(int), l1+l2);
+        merge_lists(l1, l2, array, array+l1, tmp_array);
 
         // Copying over new arrays contents
         for (int i=0; i<length; i++) {
-            array[i] = new_array[i];
+            array[i] = tmp_array[i];
         }
 
         // Freeing the intermediate memory
-        free(new_array);
+        free(tmp_array);
     }
 }
 

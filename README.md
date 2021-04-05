@@ -6,6 +6,8 @@
 **Group 02:** Monday 13:00 - 15:15<br/>
 **Group 11:** Thursday 15:45 - 18:00
 
+**The download links only work for people with access to the LRZ-GitLab! However these are just links to files/subdirectories in this repository.**
+
 <br/>
 
 ### Tutorial Sessions:
@@ -66,28 +68,28 @@ Download:
 
 <br/>
 
-Tutorial 09 - 18.01./21.01.21  - **Singly-Linked Lists** <br/>
+Tutorial 09 - 18.01./21.01.21 - **Singly-Linked Lists** <br/>
 Download:
 [Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-09) |
 [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T09-moritz-makowski.pdf?inline=false)
 
 <br/>
 
-Tutorial 10 - 25.01./28.01.21  - **Trees, BFS, DFS** <br/>
+Tutorial 10 - 25.01./28.01.21 - **Trees, BFS, DFS** <br/>
 Download:
 [Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-10) |
 [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T10-moritz-makowski.pdf?inline=false)
 
 <br/>
 
-Tutorial 11 - 01.02./04.02.21   - **Sorting Algorithms** <br/>
+Tutorial 11 - 01.02./04.02.21 - **Sorting Algorithms** <br/>
 Download:
 [Code](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/archive/main/IN8011-WS20-main.zip?path=tutorial-11) |
 [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T11-moritz-makowski.pdf?inline=false)
 
 <br/>
 
-Tutorial 12 - 08.02./11.02.21   - **Revision** <br/>
+Tutorial 12 - 08.02./11.02.21 - **Revision** <br/>
 Download:
 [Slides](https://gitlab.lrz.de/dostuffthatmatters/IN8011-WS20/-/raw/main/slides/IN8011-T12-moritz-makowski.pdf?inline=false)
 
